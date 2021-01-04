@@ -1,5 +1,3 @@
-package ua.lviv.lgs;
-
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -20,7 +18,7 @@ public class CustomLoggeredFile {
 		Log.warn("Warn Logger of the project is on the screen!");
 	}
 	public static void LogWithDomConfigurator() {
-		DOMConfigurator.configure("loggerConfig.xml");
+		DOMConfigurator.configure("src/main/resources/loggerConfig.xml");
 		Log.error("ERROR Logger of the project is on the screen!");
 	}
 }
